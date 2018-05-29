@@ -1,8 +1,12 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
 body {
     margin: 0;
     background-image: url("../images/what-the-hex/what-the-hex.png");
     color: #777777;
-    position: relative;
 }
 
 h1 {
@@ -18,6 +22,22 @@ hr {
     margin-bottom: 1.5em;
 }
 
+p {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-indent: 1.5em;
+}
+
+a.banner-link {
+    color: #ffffff;
+    position: absolute;
+    bottom: 3px;
+    left: calc(50% - 90px);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #666666;
     border-top: 5px solid #4aaaa5;
@@ -29,6 +49,8 @@ footer {
     font-size: .75em;
     width: 100vw;
     margin-top: 30px;
+    position: absolute;
+    bottom: 0;
 }
 
 .navbar {
@@ -60,19 +82,51 @@ footer {
     border: 1px solid #dddddd;
     padding: 2em;
     color: #777777;
+    margin-bottom: 120px;
+}
+
+.headshot {
+    max-width: 250px;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+}
+
+.project-container {
+    clear: both;
+    display: block;
+}
+
+.project {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.banner {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    height: 50px;
+    width: 320px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
 }
 
 @media screen and (max-width: 575px) {
     .navbar {
         background-color: #4aaaa5 !important;
         padding-right: 3vw;
+        margin-bottom: 0;
+    }
+
+    .mainContent {
+        margin-bottom: 83px;
     }
 
     footer {
         margin-top: 0;
-    }
-
-    .navbar {
-        margin-bottom: 0;
     }
 }
